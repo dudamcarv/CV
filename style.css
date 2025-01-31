@@ -1,0 +1,159 @@
+/* Definindo as fontes */
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+body {
+    background-color: #F2E5D5;
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Paleta de cores */
+:root {
+    --cor-principal: ;
+    --cor-secundaria: ;
+    --cor-destaque: ;
+}
+
+/*Estilizando a navegação */
+
+/* Estilizando a navegação fixa */
+nav {
+    background-color: #F2A7CA; /* Cor principal */
+    padding: 10px 20px;
+    position: fixed; /* Fixa o menu no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    height: 60px; /* Altura do menu */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Ajuste o padding-top do header para evitar sobreposição */
+header {
+    text-align: center;
+    padding: 120px 20px 20px; /* Padding-top maior que a altura do menu */
+    background-color: #333; /* Cor secundária */
+    color: rgb(0, 0, 0);
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Estilizando as seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #ec9bc8; /* Cor principal */
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 5px 0;
+    }
+
+    header {
+        padding-top: 180px; /* Ajuste para telas menores */
+    }
+}
+
+/* Estilizando o cabeçalho */
+header {
+    text-align: center;
+    padding: 100px 20px 20px; /* Ajuste o padding-top para 100px ou mais */
+    background-color: var(--cor-secundaria);
+    color: rgb(0, 0, 0);
+    margin-top: 60px; /* Adicione uma margem superior igual à altura do menu */
+}
+
+header img {
+    border-radius: 50%
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+/*Estilizado as seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: var(--cor-principal);
+}
+
+/*Estilizando o rodapé */
+/* Estilizando o rodapé */
+footer {
+    background-color:#F2A7CA; /* Cor de fundo do rodapé */
+    color: rgb(0, 0, 0); /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Cor padrão dos links */
+footer ul li a {
+    color: #ff0000; /* Verde */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Cor ao passar o mouse */
+footer ul li a:hover {
+    color: #FFC107; /* Amarelo */
+}
+
+/*Layout responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+}
